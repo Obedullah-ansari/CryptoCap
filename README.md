@@ -63,7 +63,7 @@ After data is updated in the Redux store, the CryptoTable component reflects the
 
 .................................................................................................................................
 
-[![📷Screen Short](./src/demo/ss.png)]
+[![📷Screen Short](cryptocap/src/demo/ss.png)]
 
 Live Link :https://crypto-cap-beta.vercel.app/
 

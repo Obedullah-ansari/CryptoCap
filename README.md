@@ -1,54 +1,69 @@
-# React + TypeScript + Vite
+⚙️ Setup Instructions
+-----------------------------------------
+1>> Clone the Repository:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+bash
+git clone <repository_url>
+Install Dependencies:
 
-Currently, two official plugins are available:
+2>>If using npm:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+npm install
+or:
+If using yarn:
+bash
+yarn install
 
-## Expanding the ESLint configuration
+3>>Run the Project:
+bash
+npm run dev
+Or:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+bash
+yarn dev
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+.....................................................................................................................
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🛠 Tech Stack + Architecture
+-------------------------------------
+Frontend: React, Redux Toolkit, Tailwind CSS.
+State Management: Redux Toolkit .
+Deployment: Vercel.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Architecture Overview:
+----------------------------
+1>> Dummy Data:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Created sampleData in the utils folder to represent initial cryptocurrency data (e.g., name, symbol, price).
+
+2>> CryptoTable Component:
+
+Displays the list of cryptocurrencies in a modern table layout, styled with Tailwind CSS for a clean, responsive UI.
+
+3>> Chart Display:
+
+Integrated Chart.js to visualize the price trends of cryptocurrencies in a graphical format.
+
+4>> State Management with Redux:
+
+Used Redux Toolkit to manage the global state of the app.
+
+Created a Redux store that holds the list of cryptocurrencies and their real-time data.
+
+5>> Simulating Real-Time Updates:
+
+Implemented setInterval to simulate live data updates.
+
+Randomly updates cryptocurrency prices and dispatches changes to Redux store.
+
+6>> Displaying Updated Data:
+
+After data is updated in the Redux store, the CryptoTable component reflects the new prices in real-time.
+
+.................................................................................................................................
+
+[![📷Screen Short](./src/demo/ss.png)]
+
+Live Link :https://crypto-cap-beta.vercel.app/
+

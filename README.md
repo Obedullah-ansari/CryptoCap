@@ -10,7 +10,7 @@ Install Dependencies:
 
 bash
 npm install
-or:
+or
 If using yarn:
 bash
 yarn install
@@ -18,7 +18,7 @@ yarn install
 3>>Run the Project:
 bash
 npm run dev
-Or:
+Or
 
 bash
 yarn dev
@@ -27,7 +27,9 @@ yarn dev
 🛠 Tech Stack + Architecture
 -------------------------------------
 Frontend: React, Redux Toolkit, Tailwind CSS.
+
 State Management: Redux Toolkit .
+
 Deployment: Vercel.
 
 Architecture Overview:

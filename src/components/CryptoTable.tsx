@@ -1,15 +1,7 @@
 import { useAppSelector } from "../hook";
 import CryptoLineChart from "../components/CryptoLineChart";
 
-const sampleChartData = [
-  { time: "Day 1", price: 29750 },
-  { time: "Day 2", price: 30100 },
-  { time: "Day 3", price: 29800 },
-  { time: "Day 4", price: 30350 },
-  { time: "Day 5", price: 31000 },
-  { time: "Day 6", price: 30700 },
-  { time: "Day 7", price: 31200 },
-];
+
 
 const CryptoTable = () => {
   const crypto = useAppSelector((state) => state.crypto);
@@ -98,7 +90,7 @@ const CryptoTable = () => {
               <td className="px-4 py-4">
                 <div className="flex justify-center overflow-hidden object-cover">
                   <CryptoLineChart
-                    data={sampleChartData}
+                    data={coin.dummyData}
                     color={coin.percent_7d >= 0 ? "#00b894" : "#d63031"}
                   ></CryptoLineChart>
                 </div>

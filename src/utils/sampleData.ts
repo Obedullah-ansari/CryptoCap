@@ -13,7 +13,54 @@ export interface CryptoData {
   volume_24h: number;
   circulating_supply: number;
   max_supply: number | null;
+  dummyData: { time: string; price: number }[];
 }
+
+const dummyData1 = [
+  { time: "Day 1", price: 29750 },
+  { time: "Day 2", price: 30100 },
+  { time: "Day 3", price: 29800 },
+  { time: "Day 4", price: 30350 },
+  { time: "Day 5", price: 31000 },
+  { time: "Day 6", price: 30700 },
+  { time: "Day 7", price: 31200 },
+];
+const dummyData2 = [
+  { time: "Day 1", price: 29750 },
+  { time: "Day 2", price: 30100 },
+  { time: "Day 3", price: 29000 },
+  { time: "Day 4", price: 30350 },
+  { time: "Day 5", price: 41000 },
+  { time: "Day 6", price: 80700 },
+  { time: "Day 7", price: 91200 },
+];
+const dummyData3 = [
+  { time: "Day 1", price: 29750 },
+  { time: "Day 2", price: 30100 },
+  { time: "Day 3", price: 29800 },
+  { time: "Day 4", price: 50350 },
+  { time: "Day 5", price: 11000 },
+  { time: "Day 6", price: 90700 },
+  { time: "Day 7", price: 21200 },
+];
+const dummyData4 = [
+  { time: "Day 1", price: 29750 },
+  { time: "Day 2", price: 30100 },
+  { time: "Day 3", price: 59800 },
+  { time: "Day 4", price: 30350 },
+  { time: "Day 5", price: 11000 },
+  { time: "Day 6", price: 60700 },
+  { time: "Day 7", price: 71200 },
+];
+const dummyData5 = [
+  { time: "Day 1", price: 29750 },
+  { time: "Day 2", price: 30100 },
+  { time: "Day 3", price: 49800 },
+  { time: "Day 4", price: 30350 },
+  { time: "Day 5", price: 71000 },
+  { time: "Day 6", price: 30700 },
+  { time: "Day 7", price: 11200 },
+];
 
 
 export const sampleCryptoData: CryptoData[] = [
@@ -30,6 +77,7 @@ export const sampleCryptoData: CryptoData[] = [
     volume_24h: 30000000000,
     circulating_supply: 19000000,
     max_supply: 21000000,
+    dummyData: dummyData1,
   },
   {
     id: 2,
@@ -44,6 +92,7 @@ export const sampleCryptoData: CryptoData[] = [
     volume_24h: 20000000000,
     circulating_supply: 120000000,
     max_supply:700000000,
+    dummyData: dummyData2,
   },
   {
     id: 3,
@@ -58,6 +107,7 @@ export const sampleCryptoData: CryptoData[] = [
     volume_24h: 50000000000,
     circulating_supply: 83000000000,
     max_supply: 500000000,
+    dummyData: dummyData3,
   },
   {
     id: 4,
@@ -72,6 +122,7 @@ export const sampleCryptoData: CryptoData[] = [
     volume_24h: 1200000000,
     circulating_supply: 160000000,
     max_supply: 200000000,
+    dummyData: dummyData4,
   },
   {
     id: 5,
@@ -86,5 +137,6 @@ export const sampleCryptoData: CryptoData[] = [
     volume_24h: 1200000000,
     circulating_supply: 54000000000,
     max_supply: 100000000000,
+    dummyData: dummyData5,
   },
 ];

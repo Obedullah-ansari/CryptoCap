@@ -23,7 +23,6 @@ Or:
 bash
 yarn dev
 
-.....................................................................................................................
 
 🛠 Tech Stack + Architecture
 -------------------------------------
@@ -61,9 +60,8 @@ Randomly updates cryptocurrency prices and dispatches changes to Redux store.
 
 After data is updated in the Redux store, the CryptoTable component reflects the new prices in real-time.
 
-.................................................................................................................................
 
-[![📷Screen Short](cryptocap/src/demo/ss.png)]
+[![📷Screen Short](./src/Demo/ss.png)]
 
 Live Link :https://crypto-cap-beta.vercel.app/
 
